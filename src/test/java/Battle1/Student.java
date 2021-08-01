@@ -14,19 +14,21 @@ public class Student {
 
     private int mobileNo;
 
-    Student(String name,String college,String course,int rollno,String Add,int mobileNo){
-        this.name = name;
-        this.college = college;
-        this.course = course;
-        this.rollno = rollno;
-        this.Add = Add;
-        this.mobileNo = mobileNo;
+    Student(String name1,String college1,String course1,int rollno1,String Add1,int mobileNo1){
+        name = name1;
+        college = college1;
+        course = course1;
+        rollno = rollno1;
+        Add = Add1;
+        mobileNo = mobileNo1;
 
     }
 
     public Student() {
-        
+
     }
+
+
 
 
     public String getName() {
@@ -77,13 +79,26 @@ public class Student {
         this.mobileNo = mobileNo;
     }
 
-}
 
-class TestStudent {
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", college='" + college + '\'' +
+                ", course='" + course + '\'' +
+                ", rollno=" + rollno +
+                ", Add='" + Add + '\'' +
+                ", mobileNo=" + mobileNo +
+                '}';
+    }
 
     public static void main(String args[]) {
-        Student s = new Student();
+        //Student s = new Student();
+        Student s1 = new Student("vrishti tawniya","oxford university","MBBS",102,"UK",965321435);
+        System.out.println(s1);
 
+
+        Student s = new Student();
         s.setName("ved tawniya");
         System.out.println(s.getName());
 
