@@ -93,7 +93,7 @@ public class Student {
     }
 
     public static void main(String args[]) {
-        //Student s = new Student();
+
         Student s1 = new Student("vrishti tawniya","oxford university","MBBS",102,"UK",965321435);
         System.out.println(s1);
 
